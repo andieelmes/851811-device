@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Зульфия Салихкулова](https://up.htmlacademy.ru/htmlcss/22/user/851811).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
