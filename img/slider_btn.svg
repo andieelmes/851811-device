@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>slider-button-empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1205.000000, -555.000000)" fill="#000000">
+            <g id="slide-1" transform="translate(230.000000, 213.000000)">
+                <g id="slider-button-empty" transform="translate(975.000000, 342.000000)">
+                    <g id="Shape">
+                        <path d="M6,1.04347826 C8.73286957,1.04347826 10.9565217,3.26713043 10.9565217,6 C10.9565217,8.73286957 8.73286957,10.9565217 6,10.9565217 C3.26713043,10.9565217 1.04347826,8.73286957 1.04347826,6 C1.04347826,3.26713043 3.26713043,1.04347826 6,1.04347826 Z M6,0 C2.68643478,0 0,2.68643478 0,6 C0,9.31408696 2.68643478,12 6,12 C9.31408696,12 12,9.31408696 12,6 C12,2.68643478 9.31408696,0 6,0 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
