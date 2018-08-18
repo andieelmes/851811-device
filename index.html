@@ -16,7 +16,9 @@
         <input type='text' name="search" class="search__input" id="search">
       </div>
       <ul class="user-menu">
-        <li class="user-menu__login">Войти</li>
+        <li class="user-menu__login">
+          <button type="button">Войти</button>
+        </li>
       </ul>
       <ul class="products-menu">
         <li class="products-menu__item products-menu__item--compare">
@@ -29,7 +31,7 @@
     </div>
     <nav class="main-nav">
       <div class="main-nav__catalog">
-        <a href="#" class="main-nav__title">Каталог товаров</a>
+        <a href="catalog.html" class="main-nav__title">Каталог товаров</a>
         <div class="site-menu">
           <ul class="site-menu__column">
             <li class="site-menu__item">
@@ -75,7 +77,7 @@
       <div class="slider__items">
         <article class="slider__slide">
           <div class="slider__column">
-            <img src="img/selfie-stick.png" alt="selfie stick" width="384" height="486">
+            <img src="img/selfie-stick.png" alt="Самая длинная селфи-палка" width="384" height="486">
           </div>
           <div class="slider__column">
             <span class="slider__count">01</span>
@@ -102,7 +104,7 @@
         </article>
         <article class="slider__slide">
           <div class="slider__column">
-            <img src="img/fitness-weightloss.png" alt="smart watch" width="345" height="485">
+            <img src="img/fitness-weightloss.png" alt="Фитнес-браслет" width="345" height="485">
           </div>
           <div class="slider__column">
             <span class="slider__count">02</span>
@@ -121,7 +123,7 @@
         </article>
         <article class="slider__slide">
           <div class="slider__column">
-            <img src="img/drone-bee.png" alt="drone" width="526" height="334">
+            <img src="img/drone-bee.png" alt="Дрон с мощным лазером" width="526" height="334">
           </div>
           <div class="slider__column">
             <span class="slider__count">03</span>
@@ -144,14 +146,21 @@
         </article>
       </div>
       <ul class="slider__controls">
+        <span class="visually-hidden">Кпопки для перехода по слайдам</span>
         <li class="slider__control">
-          1
+          <button type="button">
+            <span class="visually-hidden">1</span>
+          </button>          
         </li>
         <li class="slider__control">
-          2
+          <button type="button">
+            <span class="visually-hidden">2</span>
+          </button> 
         </li>
         <li class="slider__control">
-          3
+          <button type="button">
+            <span class="visually-hidden">3</span>
+          </button>
         </li>
       </ul>
     </section>
@@ -211,16 +220,16 @@
     </section>
     <section class="logo">
       <a href="#" class="logo__link">
-        <img src="img/logo_dji.png" alt="dji" width="260" height="100">
+        <img src="img/logo_dji.png" alt="Производитель Dji" width="260" height="100">
       </a>
       <a href="#" class="logo__link">
-        <img src="img/logo_sp.png" alt="s7 gadjets" width="260" height="100">
+        <img src="img/logo_sp.png" alt="Производитель s7 gadgets" width="260" height="100">
       </a>
       <a href="#" class="logo__link">
-        <img src="img/logo_go_pro.png" alt="go pro" width="260" height="100">
+        <img src="img/logo_go_pro.png" alt="Производитель Go Pro" width="260" height="100">
       </a>
       <a href="#" class="logo__link">
-        <img src="img/logo_vive.png" alt="vive" width="260" height="100">
+        <img src="img/logo_vive.png" alt="Производитель Vive" width="260" height="100">
       </a>
     </section>
     <section class="info">
@@ -239,15 +248,15 @@
             <a href="#">ЖелДорЭкспедиция</a>
           </li>
         </ul>
-        <a href="link">Подробнее о нас</a>
+        <a href="#" class="link">Подробнее о нас</a>
       </section>
       <section class="description">
         <h2 class="description__header">Контакты</h2>
         <p class="description__content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="description__map">
-          <img src="img/map.png" alt="map" width="960" height="559">
+          <img src="img/map.png" alt="Офис компании по адресу: улица Строителей, 15" width="960" height="559">
         </div>
-        <a href="link">Напишите нам</a>
+        <button type="button" class="link">Напишите нам</button>
       </section>
     </section>
   </main>
@@ -257,7 +266,9 @@
         <h2>Device</h2>
       </a>
       <ul class="footer__navigation">
-        <li class="footer__navigation-item footer__navigation-item--login">Войти</li>
+        <li class="footer__navigation-item footer__navigation-item--login">
+          <button type="button">Войти</button>
+        </li>
         <li class="footer__navigation-item footer__navigation-item--compare">
           <a href="#">Сравнить</a>
         </li>
@@ -296,12 +307,30 @@
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__creator">
-        <img src="img/logo_htmlacademy.svg" alt="htmlacademy" width="27" height="35">
+        <img src="img/logo_htmlacademy.svg" alt="Лого школы Htmlacademy" width="27" height="35">
       </a>
     </section>
   </footer>
   <section class="modal modal--map">
-    <img src="img/map.png" alt="map" width="960" height="559">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/map.png" alt="Офис компании по адресу: улица Строителей, 15" width="960" height="559">
+  </section>
+  <section class="modal modal--feedback">
+    <form class="feedback" name="feedback" method="POST" action="https://echo.htmlacademy.ru">
+      <button type="button" name="close_popup">
+        <span class="visually-hidden">Закрыть попап</span>
+      </button>
+      <label class="feedback__label feedback__label--name">Ваше имя:
+        <input id="name" class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label class="feedback__label feedback__label--email">Ваш e-mail:
+        <input id="email" class="feedback__input" type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label class="feedback__label">Текст письма:
+        <textarea id="text" class="feedback__input feedback__input--textarea"name="feedback_text" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit" class="feedback__link">Отправить</button>
+    </form>
   </section>
 </body>
 </html>

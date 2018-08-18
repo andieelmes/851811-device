@@ -19,7 +19,9 @@
         <li class="navigation__account">
           <a href="#">Валентин Петухов</a>
         </li>
-        <li class="user-menu__logout">Выйти</li>
+        <li class="user-menu__logout">
+          <button type="button">Выйти</button>
+        </li>
       </ul>
       <ul class="products-menu">
         <li class="products-menu__item products-menu__item--compare">
@@ -130,88 +132,93 @@
         <h2 class="sorting__title">Сортировка:</h2>
         <ul class="sorting__items">
           <li class="sorting__item active">
-            <a href="#">По цене</a>
+            <button type="button">По цене</button>
           </li>
           <li class="sorting__item">
-            <a href="#">По типу</a>
+            <button type="button">По типу</button>
           </li>
           <li class="sorting__item">
-            <a href="#">По популярности</a>
+            <button type="button">По популярности</button>
           </li>
         </ul>
         <ul class="sorting__direction">
           <li class="sorting__up">
-            <a href="#">up</a>
+            <button type="button">
+              <span class="visually-hidden">По возрастанию</span>
+            </button>
           </li>
           <li class="sorting__down">
-            <a href="#">down</a>
+            <button type="button">
+              <span class="visually-hidden">По убыванию</span>
+            </button>
           </li>
         </ul>
       </div>
       <section class="results__products">
         <article class="results__product">
-          <img src="img/amateur-selfie-stick.png" alt="amateur selfie stick" width="360" height="380">
+          <img src="img/amateur-selfie-stick.png" alt="Любительская селфи-палка" width="360" height="380">
           <p class="results__products-about">
             <a href="#" class="results__products-name">Любительская селфи-палка</a>
             <span class="results__products-price">500 руб.</span>
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <button type="button">В корзину</button>
             </li>
             <li class="results__products-compare">
-              <a href="#">Добавить к сравнению</a>
+              <button type="button">Добавить к сравнению</button>
             </li>
           </ul>
         </article>
         <article class="results__product">
-          <img src="img/profi-selfie-stick.png" alt="profi selfie stick" width="360" height="380">
+          <img src="img/profi-selfie-stick.png" alt="Профессиональная селфи-палка" width="360" height="380">
           <p class="results__products-about">
-            <a href="#" class="results__products-name">Профессиональная селфи-палка </a>
+            <a href="#" class="results__products-name">Профессиональная селфи-палка</a>
             <span class="results__products-price">1 500 руб.</span>
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <button type="button">В корзину</button>
             </li>
             <li class="results__products-compare">
-              <a href="#">Добавить к сравнению</a>
+              <button type="button">Добавить к сравнению</button>
             </li>
           </ul>
         </article>
         <article class="results__product">
-          <img src="img/waterproof-selfie-stick.png" alt="floating selfie stick" width="360" height="380">
+          <img src="img/waterproof-selfie-stick.png" alt="Непотопляемая селфи-палка" width="360" height="380">
           <p class="results__products-about">
             <a href="#" class="results__products-name">Непотопляемая селфи-палка</a>
             <span class="results__products-price">2 500 руб.</span>
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <button type="button">В корзину</button>
             </li>
             <li class="results__products-compare">
-              <a href="#">Добавить к сравнению</a>
+              <button type="button" >Добавить к сравнению</button>
             </li>
           </ul>
         </article>
         <article class="results__product">
           <span class="results__products-label">new</span>
-          <img src="img/hand-selfie-stick.png" alt="selfie stick with a hand" width="360" height="380">
+          <img src="img/hand-selfie-stick.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
           <p class="results__products-about">
             <a href="#" class="results__products-name">Селфи-палка «Следуй за мной»</a>
             <span class="results__products-price">4 900 руб.</span>
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <button type="button">В корзину</button>
             </li>
             <li class="results__products-compare">
-              <a href="#">Добавить к сравнению</a>
+              <button type="button">Добавить к сравнению</button>
             </li>
           </ul>
         </article>
       </section>
       <section class="pagination">
+        <h2 class="visually-hidden">Пагинация</h2>
         <a href="#" class="pagination__btn">Назад</a>
         <ul class="pagination__list">
           <li class="pagination__page active">
@@ -237,7 +244,9 @@
         <li class="footer__navigation-item footer__navigation-item--account">
           <a href="#">Валентин Петухов</a>
         </li>
-        <li class="footer__navigation-item footer__navigation-item--logout">Выйти</li>
+        <li class="footer__navigation-item footer__navigation-item--logout">
+          <button type="button">Выйти</button>
+        </li>
         <li class="footer__navigation-item footer__navigation-item--compare">
           <a href="#">Сравнить</a>
         </li>
@@ -276,7 +285,7 @@
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__creator">
-        <img src="img/logo_htmlacademy.svg" alt="htmlacademy" width="27" height="35">
+        <img src="img/logo_htmlacademy.svg" alt="Лого школы Htmlacademy" width="27" height="35">
       </a>
     </section>
   </footer>
