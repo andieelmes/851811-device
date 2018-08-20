@@ -312,6 +312,9 @@
     </section>
   </footer>
   <section class="modal modal--map">
+    <button type="button" name="close_popup">
+      <span class="visually-hidden">Закрыть попап</span>
+    </button>
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <img src="img/map.png" alt="Офис компании по адресу: улица Строителей, 15" width="960" height="559">
   </section>
@@ -320,14 +323,14 @@
       <button type="button" name="close_popup">
         <span class="visually-hidden">Закрыть попап</span>
       </button>
-      <label class="feedback__label feedback__label--name">Ваше имя:
+      <label class="feedback__label">Ваше имя:
         <input id="name" class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
       </label>
-      <label class="feedback__label feedback__label--email">Ваш e-mail:
+      <label class="feedback__label">Ваш e-mail:
         <input id="email" class="feedback__input" type="email" name="email" placeholder="email@example.com">
       </label>
       <label class="feedback__label">Текст письма:
-        <textarea id="text" class="feedback__input feedback__input--textarea" name="feedback_text" placeholder="В свободной форме"></textarea>
+        <textarea id="text" class="feedback__input" name="feedback_text" placeholder="В свободной форме"></textarea>
       </label>
       <button type="submit" class="feedback__link">Отправить</button>
     </form>
