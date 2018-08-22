@@ -4,12 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <a href="index.html" class="page-header__logo logo">
-      <h2>Device</h2>
+      <h1>Device</h1>
     </a>
     <div class="navigation">
       <div class="search">
@@ -124,7 +127,9 @@
             <input type="radio" name="bluetooth" value="no"> Нет
           </label>
         </fieldset>
-        <input type="submit" value="Показать">
+        <button type="submit" class="link">
+          <span>Показать</span>
+        </button>
       </form>
     </section>
     <section class="results">
@@ -142,12 +147,12 @@
           </li>
         </ul>
         <ul class="sorting__direction">
-          <li class="sorting__up">
+          <li class="sorting__arrow sorting__arrow--up">
             <a href="#">
               <span class="visually-hidden">По возрастанию</span>
             </a>
           </li>
-          <li class="sorting__down">
+          <li class=" sorting__arrow sorting__arrow--down active">
             <a href="#">
               <span class="visually-hidden">По убыванию</span>
             </a>
@@ -163,7 +168,9 @@
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <a href="#" class="link">
+                <span>В корзину</span>
+              </a>
             </li>
             <li class="results__products-compare">
               <a href="#">Добавить к сравнению</a>
@@ -178,7 +185,9 @@
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <a href="#" class="link">
+                <span>В корзину</span>
+              </a>
             </li>
             <li class="results__products-compare">
               <a href="#">Добавить к сравнению</a>
@@ -193,7 +202,9 @@
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <a href="#" class="link">
+                <span>В корзину</span>
+              </a>
             </li>
             <li class="results__products-compare">
               <a href="#">Добавить к сравнению</a>
@@ -209,7 +220,9 @@
           </p>
           <ul class="results__products-overlay">
             <li class="results__products-cart">
-              <a href="#">В корзину</a>
+              <a href="#" class="link">
+                <span>В корзину</span>
+              </a>
             </li>
             <li class="results__products-compare">
               <a href="#">Добавить к сравнению</a>
@@ -275,13 +288,19 @@
     <section class="footer__links">
       <ul class="footer__socials">
         <li class="footer__social footer__social--fb">
-          <a href="#">Facebook</a>
+          <a href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="footer__social footer__social--insta">
-          <a href="#">Instagram</a>
+          <a href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
         <li class="footer__social footer__social--tw">
-          <a href="#">Twitter</a>
+          <a href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__creator">
