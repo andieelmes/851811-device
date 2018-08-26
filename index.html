@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <img src="device-index.jpg" style="position:absolute; left:50%;top:0; margin-left:-720px;opacity:0.5; z-index:999">
+  <!--<img src="device-popup.jpg" style="position:absolute; left:50%;top:0; margin-left:-720px;opacity:0.5; z-index:999">-->
   <div class="inner">
     <header class="main-header">
       <div class="flex-container">
@@ -40,7 +40,7 @@
       <nav class="main-nav flex-container">
         <div class="main-nav__catalog">
           <a href="catalog.html" class="main-nav__title">Каталог товаров</a>
-          <div class="site-menu">
+          <div class="site-menu flex-container">
             <ul class="site-menu__column">
               <li class="site-menu__item">
                 <a href="#">Виртуальная реальность</a>
@@ -84,102 +84,103 @@
   <main class="main">
     <div class="inner">
       <section class="slider">
-        <div class="slider__items">
-          <article class="slider__slide flex-container">
-            <div class="slider__column slider__column--image">
-              <img src="img/selfie-stick.png" alt="Самая длинная селфи-палка" width="384" height="486">
-            </div>
-            <div class="slider__column slider__column--content">         
-              <h2 class="slider__title">Делай селфи, как Бен Стиллер!
-              </h2>
-              <p class="slider__caption">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              </p>
-              <a href="#" class="slider__link link">
-                <span>Подробнее</span>
-              </a>
-              <table class="slider__qualities">
-                <tbody>
-                  <tr class="slider__quality">
-                    <td class="slider__description">Длина палки</td>
-                    <td class="slider__quantity">8,5 м</td>
-                  </tr>
-                  <tr class="slider__quality">
-                    <td class="slider__description">Вес палки</td>
-                    <td class="slider__quantity">5 кг</td>
-                  </tr>
-                  <tr class="slider__quality">
-                    <td class="slider__description">Материал</td>
-                    <td class="slider__quantity">Карбон</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
-          <!-- <article class="slider__slide">
-            <div class="slider__column">
-              <img src="img/fitness-weightloss.png" alt="Фитнес-браслет" width="345" height="485">
-            </div>
-            <div class="slider__column">
-              <span class="slider__count">02</span>
-              <h2 class="slider__title">Худеем правильно!
-              </h2>
-              <p class="slider__caption">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-              </p>
-              <a href="#" class="slider__link link">
-                <span>Подробнее</span>
-              </a>
-              <table>
-                <tr>
-                  <td class="slider__description">Без подзарядки</td>
-                  <td class="slider__quantity">48 часов</td>
-                </tr>
-              </table>
-            </div>
-          </article>
-          <article class="slider__slide">
-            <div class="slider__column">
-              <img src="img/drone-bee.png" alt="Дрон с мощным лазером" width="526" height="334">
-            </div>
-            <div class="slider__column">
-              <span class="slider__count">03</span>
-              <h2 class="slider__title">Порхает как бабочка, жалит как пчела!
-              </h2>
-              <p class="slider__caption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </p>
-              <a href="#" class="slider__link link">
-                <span>Подробнее</span>
-              </a>
-              <table>
-                <tr>
-                  <td class="slider__description">Дальность полета</td>
-                  <td class="slider__quantity">800 м</td>
-                </tr>
-                <tr>
-                  <td class="slider__description">Радиус поражения</td>
-                  <td class="slider__quantity">50 м</td>
-                </tr>
-              </table>
-            </div>
-          </article> -->
-        </div>
         <span class="visually-hidden">Кпопки для перехода по слайдам</span>
-        <ul class="slider__controls">        
-          <li class="slider__control">
-            <button type="button" class="active">
-              <span class="visually-hidden">1</span>
-            </button>          
-          </li>
-          <li class="slider__control">
-            <button type="button">
-              <span class="visually-hidden">2</span>
-            </button> 
-          </li>
-          <li class="slider__control">
-            <button type="button">
-              <span class="visually-hidden">3</span>
-            </button>
-          </li>
-        </ul>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider__controls">        
+          <label class="slider__control" for="btn-1">
+            <span class="visually-hidden">1</span>        
+          </label>
+          <label class="slider__control" for="btn-2">
+            <span class="visually-hidden">2</span>
+          </label>
+          <label class="slider__control" for="btn-3">
+            <span class="visually-hidden">3</span>
+          </label>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__items">
+            <article class="slider__slide flex-container">
+              <div class="slider__column slider__column--image">
+                <img src="img/selfie-stick.png" alt="Самая длинная селфи-палка" width="384" height="486">
+              </div>
+              <div class="slider__column slider__column--content">         
+                <h2 class="slider__title">Делай селфи, <br>как Бен Стиллер!
+                </h2>
+                <p class="slider__caption">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <a href="#" class="slider__link link">
+                  <span>Подробнее</span>
+                </a>
+                <table class="slider__qualities">
+                  <tbody>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Длина палки</td>
+                      <td class="slider__quantity">8,5 м</td>
+                    </tr>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Вес палки</td>
+                      <td class="slider__quantity">5 кг</td>
+                    </tr>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Материал</td>
+                      <td class="slider__quantity">Карбон</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="slider__slide flex-container">
+              <div class="slider__column slider__column--image">
+                <img src="img/fitness-weightloss.png" alt="Фитнес-браслет" width="345" height="485">
+              </div>
+              <div class="slider__column slider__column--content">         
+                <h2 class="slider__title">Худеем <br>правильно!
+                </h2>
+                <p class="slider__caption">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                </p>
+                <a href="#" class="slider__link link">
+                  <span>Подробнее</span>
+                </a>
+                <table class="slider__qualities">
+                  <tbody>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Без подзарядки</td>
+                      <td class="slider__quantity">48 часов</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="slider__slide flex-container">
+              <div class="slider__column slider__column--image">
+                <img src="img/drone-bee.png" alt="Дрон с мощным лазером" width="526" height="334">
+              </div>
+              <div class="slider__column slider__column--content">         
+                <h2 class="slider__title">Порхает как бабочка, жалит как пчела!
+                </h2>
+                <p class="slider__caption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a href="#" class="slider__link link">
+                  <span>Подробнее</span>
+                </a>
+                <table class="slider__qualities">
+                  <tbody>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Дальность полета</td>
+                      <td class="slider__quantity">800 м</td>
+                    </tr>
+                    <tr class="slider__quality">
+                      <td class="slider__description">Радиус поражения</td>
+                      <td class="slider__quantity">50 м</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
       <section class="popular">
         <ul class="popular__items flex-container">
@@ -205,44 +206,45 @@
       </section>
     </div>
     <section class="services">
-      <div class="inner">
+      <div class="inner flex-container">
+        <input type="radio" id="services-1" name="toggle_services" checked>
+        <input type="radio" id="services-2" name="toggle_services">
+        <input type="radio" id="services-3" name="toggle_services">
+        <div class="services__names">        
+          <label class="services__name link" for="services-1">
+            <span>Доставка</span>
+          </label>   
+          <label class="services__name link" for="services-2">
+            <span>Гарантия</span>
+          </label>
+          <label class="services__name link" for="services-3">
+            <span>Кредит</span>
+          </label>
+        </div>
         <!-- до 7 модуля -->
-        <ul class="services__items">
-          <li class="services__item services__item--delivery">
-            <span class="services__name active link">
-              <span>Доставка</span>
-            </span>
-            <div class="services__content">
-              <div class="services__info">
+        <div class="services__inner">
+          <ul class="services__items">
+            <li class="services__item services__item--delivery">
+              <div class="services__content">
                 <h3 class="services__title">Доставка</h3>
                 <p class="services__caption">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
-            </div>
-          </li>
-          <li class="services__item services__item--warranty">
-            <span class="services__name link">
-              <span>Гарантия</span>
-            </span>
-            <div class="services__content">
-              <div class="services__info">
+            </li>
+            <li class="services__item services__item--warranty">
+              <div class="services__content">
                 <h3 class="services__title">Гарантия</h3>
                 <p class="services__caption">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
-            </div>
-          </li>
-          <li class="services__item services__item--loan">
-            <span class="services__name link">
-              <span>Кредит</span>
-            </span>
-            <div class="services__content">
-              <div class="services__info">
+            </li>
+            <li class="services__item services__item--loan">
+              <div class="services__content">
                 <h3 class="services__title">Кредит</h3>
                 <p class="services__caption">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <div class="inner">
       <section class="logos">
@@ -367,12 +369,14 @@
       <button type="button" name="close_popup" class="close">
         <span class="visually-hidden">Закрыть попап</span>
       </button>
-      <label class="feedback__label">Ваше имя:
-        <input id="name" class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
-      </label>
-      <label class="feedback__label">Ваш e-mail:
-        <input id="email" class="feedback__input" type="email" name="email" placeholder="email@example.com">
-      </label>
+      <div class="feedback__top flex-container">
+        <label class="feedback__label">Ваше имя:
+          <input id="name" class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="feedback__label">Ваш e-mail:
+          <input id="email" class="feedback__input" type="email" name="email" placeholder="email@example.com">
+        </label>
+      </div>
       <label class="feedback__label">Текст письма:
         <textarea id="text" class="feedback__input" name="feedback_text" placeholder="В свободной форме"></textarea>
       </label>
