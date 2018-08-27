@@ -1573,16 +1573,15 @@ textarea.feedback__input {
 .pagination {
   background-color: rgba(0, 0, 0, 0.08);
   margin-left: 73px;
-  align-items: center;
   min-height: 70px;
-  padding: 10px 29px 6px;
 }
 
 .pagination__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 12px;
+  margin-left: 12px;  
+  padding: 25px 29px 21px;
 }
 
 .pagination__btn {
@@ -1590,6 +1589,9 @@ textarea.feedback__input {
   line-height: 24px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
+  padding: 25px 29px 21px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .pagination__btn:hover {
