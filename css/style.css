@@ -1391,14 +1391,13 @@ textarea.feedback__input {
 
 .radio__fake:after {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 4px;
+  left: 4px;
   width: 9px;
   height: 9px;
   background-color: black;
   border-radius: 50%;
   content: "";
-  transform: translate(-50%, -50%);
   opacity: 0;
 }
 
