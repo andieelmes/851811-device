@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <!--<img src="device-popup.jpg" style="position:absolute; left:50%;top:0; margin-left:-720px;opacity:0.5; z-index:999">-->
+  <!--<img src="device-styleguide.png" style="position:absolute; left:50%;top: -157px; margin-left:-720px;opacity:0.5; z-index:999">-->
+  <img src="device-index.jpg" style="position:absolute; left:50%;top: 0;margin-left:-720px;opacity:0.5; z-index:999">
   <div class="inner">
     <header class="main-header">
       <div class="flex-container">
@@ -17,9 +18,10 @@
           <h1>Device</h1>
         </a>
         <div class="navigation flex-container">
-          <div class="search">
-            <input type='text' name="search" class="search__input" id="search" placeholder="Поиск по сайту">
-          </div>
+          <form class="search" name="search" method="POST" action="https://echo.htmlacademy.ru">
+            <input type='text' name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
+            <button type="submit" class="search__button">Найти</button>
+          </form>
           <div class="navigation__container flex-container">
             <ul class="user-menu flex-container">
               <li class="user-menu__login">
@@ -46,7 +48,7 @@
                 <a href="#">Виртуальная реальность</a>
               </li>
               <li class="site-menu__item">
-                <a href="#">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы для селфи</a>
               </li>
               <li class="site-menu__item">
                 <a href="#">Экшн-камеры</a>

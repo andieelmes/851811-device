@@ -9,17 +9,19 @@
 </head>
 
 <body class="catalog">
-  <!--<img src="device-catalog.jpg" style="position:absolute; left:50%;top:0; margin-left:-720px;opacity:0.5; z-index:999">-->
+  <!--<img src="device-styleguide.png" style="position:absolute; left:50%;top: -3298px;margin-left:-780px;opacity:0.5; z-index:999">-->
+  <!--<img src="device-catalog.jpg" style="position:absolute; left:50%;top: 0;margin-left:-720px;opacity:0.5; z-index:999">-->
   <div class="inner">
     <header class="main-header">
       <div class="flex-container">
-        <a class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo">
           <h2>Device</h2>
         </a>
         <div class="navigation flex-container">
-          <div class="search">
-            <input type='text' name="search" class="search__input" id="search" placeholder="Поиск по сайту">
-          </div>
+          <form class="search" name="search" method="POST" action="https://echo.htmlacademy.ru">
+            <input type='text' name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
+            <button type="submit" class="search__button">Найти</button>
+          </form>
           <div class="navigation__container flex-container">
             <ul class="user-menu flex-container">
               <li class="navigation__account">
@@ -49,7 +51,7 @@
                 <a href="#">Виртуальная реальность</a>
               </li>
               <li class="site-menu__item">
-                <a href="#">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы для селфи</a>
               </li>
               <li class="site-menu__item">
                 <a href="#">Экшн-камеры</a>
@@ -102,13 +104,52 @@
       </section>
     </div>
     <div class="products">
+      <div class="products__top">
+        <div class="inner flex-container">
+          <div class="sorting flex-container">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__items flex-container">
+              <li class="sorting__item active">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sorting__item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sorting__item">
+                <a href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sorting__direction flex-container">
+              <li class="sorting__arrow sorting__arrow--up">
+                <a href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+              </li>
+              <li class=" sorting__arrow sorting__arrow--down active">
+                <a href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="inner flex-container">
         <section class="filters">
           <h2 class="filters__title">Фильтр:</h2>
-          <form class="filters__form">
-            <fieldset style="height: 140px;">
+          <form class="filters__form" name="filters" method="POST" action="https://echo.htmlacademy.ru">
+            <fieldset>
               <label for="price" class="catalog__caption">Стоимость</label>
-              <!--input type range-->
+              <div class="range">
+                <span class="range__line">
+                  <span class="range__button range__button--min">
+                    <span class="range__label">от 0</span>
+                  </span>
+                  <span class="range__button range__button--max">
+                    <span class="range__label">до 5000</span>
+                  </span>
+                </span>         
+              </div>
             </fieldset>
             <fieldset>
               <span class="catalog__caption">Цвет</span>
@@ -150,32 +191,7 @@
           </form>
         </section>
         <section class="results">
-          <div class="sorting flex-container">
-            <h2 class="sorting__title">Сортировка:</h2>
-            <ul class="sorting__items flex-container">
-              <li class="sorting__item active">
-                <a href="#">По цене</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sorting__direction flex-container">
-              <li class="sorting__arrow sorting__arrow--up">
-                <a href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-              <li class=" sorting__arrow sorting__arrow--down active">
-                <a href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+
           <section class="results__products flex-container">
             <article class="results__product">
               <img src="img/amateur-selfie-stick.png" alt="Любительская селфи-палка" width="360" height="380">
