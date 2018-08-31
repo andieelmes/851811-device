@@ -1543,6 +1543,7 @@ textarea.feedback__input {
   background-image: url(../img/range_btn.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: grab;
 }
 
 .range__button--max {
