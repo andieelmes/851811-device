@@ -104,36 +104,6 @@
       </section>
     </div>
     <div class="products">
-      <div class="products__top">
-        <div class="inner flex-container">
-          <div class="sorting flex-container">
-            <h2 class="sorting__title">Сортировка:</h2>
-            <ul class="sorting__items flex-container">
-              <li class="sorting__item active">
-                <a href="#">По цене</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sorting__direction flex-container">
-              <li class="sorting__arrow sorting__arrow--up">
-                <a href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-              <li class=" sorting__arrow sorting__arrow--down active">
-                <a href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <div class="inner flex-container">
         <section class="filters">
           <h2 class="filters__title">Фильтр:</h2>
@@ -191,7 +161,32 @@
           </form>
         </section>
         <section class="results">
-
+          <div class="sorting flex-container">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__items flex-container">
+              <li class="sorting__item active">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sorting__item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sorting__item">
+                <a href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sorting__direction flex-container">
+              <li class="sorting__arrow sorting__arrow--up">
+                <a href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+              </li>
+              <li class=" sorting__arrow sorting__arrow--down active">
+                <a href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <section class="results__products flex-container">
             <article class="results__product">
               <img src="img/amateur-selfie-stick.png" alt="Любительская селфи-палка" width="360" height="380">
@@ -285,8 +280,9 @@
             </ul>
             <a href="#" class="pagination__btn">Вперед</a>
           </section>
-        </section>
+        </section>       
       </div>
+      
     </div>
   </main>
   <footer class="footer">
