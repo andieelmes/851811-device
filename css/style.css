@@ -99,12 +99,9 @@ a:active {
   margin: 10px 0;
 }
 
-.logo:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.logo:active {
-  color: rgba(0, 0, 0, 0.3);
+.index .logo:hover, .index .logo:active {
+  color: black;
+  opacity: 1;
 }
 
 .main-header {
@@ -911,7 +908,7 @@ a:active {
   display: block;
 }
 
-.logos__link:hover, .logo:active{
+.logos__link:hover, .logos__link:active{
   opacity: 1;
 }
 
