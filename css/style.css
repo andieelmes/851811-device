@@ -1391,8 +1391,7 @@ textarea.feedback__input {
 
 .products:before {
   flex-grow: 1;
-  background-color: #EBEBEB;
-  height:100%;
+  background-color: #EFEFEF;
   content: "";
   z-index: 20;
   box-shadow: inset 0 70px #DBDBDB;
