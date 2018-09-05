@@ -292,10 +292,10 @@
         <section class="description">
           <h2 class="description__header">Контакты</h2>
           <p class="description__content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="description__map">
+          <a href="#" class="description__map js-map-btn">
             <img src="img/map_small.png" alt="Офис компании по адресу: улица Строителей, 15" width="560" height="222">
-          </div>
-          <a href="#" class="link description__link">
+          </a>
+          <a href="#" class="link description__link js-feedback-btn">
             <span>Напишите нам</span>
           </a>
         </section>
@@ -361,33 +361,35 @@
       </section>
     </div>
   </footer>
-  <section class="modal modal--map">
-    <button type="button" name="close_popup" class="close">
+  <section class="modal modal--map js-map-container">
+    <button type="button" name="close_popup" class="close js-close">
       <span class="visually-hidden">Закрыть попап</span>
     </button>
     <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1536131745288" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img src="img/map.png" alt="Офис компании по адресу: улица Строителей, 15" width="960" height="559">
   </section>
-  <section class="modal modal--feedback">
-    <form class="feedback" name="feedback" method="POST" action="https://echo.htmlacademy.ru">
-      <button type="button" name="close_popup" class="close">
+  <section class="modal modal--feedback js-feedback-container">
+    <form class="feedback js-feedback-form" name="feedback" method="POST" action="https://echo.htmlacademy.ru">
+      <button type="button" name="close_popup" class="close js-close">
         <span class="visually-hidden">Закрыть попап</span>
       </button>
       <div class="feedback__top flex-container">
         <label class="feedback__label">Ваше имя:
-          <input id="name" class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="name" class="feedback__input js-feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         </label>
         <label class="feedback__label">Ваш e-mail:
-          <input id="email" class="feedback__input" type="email" name="email" placeholder="email@example.com">
+          <input id="email" class="feedback__input js-feedback-email" type="email" name="email" placeholder="email@example.com">
         </label>
       </div>
       <label class="feedback__label">Текст письма:
-        <textarea id="text" class="feedback__input" name="feedback_text" placeholder="В свободной форме"></textarea>
+        <textarea id="text" class="feedback__input js-feedback-text" name="feedback_text" placeholder="В свободной форме"></textarea>
       </label>
       <button type="submit" class="feedback__link link">
         <span>Отправить</span>
       </button>
     </form>
   </section>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

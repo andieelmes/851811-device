@@ -63,7 +63,6 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  font-size: 0;
 }
 
 a:hover {
@@ -180,6 +179,7 @@ a:active {
   min-width: 85px;
   display: none;
   cursor: pointer;
+  font-weight: 300;
 }
 .search__input:focus, 
 .search__input:valid {
@@ -207,6 +207,16 @@ a:active {
 .search__input:hover:-ms-input-placeholder,
 .search__input:hover:-moz-placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.search__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.search__button:active {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .user-menu,
@@ -970,6 +980,7 @@ a:active {
   list-style-type: none;
   margin: 65px 0 62px;
   padding: 0;
+  padding-right: 88px;
 }
 
 .description__item {
@@ -1003,6 +1014,8 @@ a:active {
   overflow: hidden;
   margin: 39px 0 77px;
   position: relative;
+  cursor: pointer;
+  display: block;
 }
 
 .footer {
@@ -1229,6 +1242,17 @@ a:active {
   padding: 94px 100px 86px;
 }
 
+.feedback.error:before {
+  content: "Заполните все поля";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: red;
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+}
+
 .feedback__label {
   width: 100%;
   display: block;
@@ -1299,6 +1323,7 @@ textarea.feedback__input {
   position: absolute;
   right: 22px;
   top: 22px;
+  z-index: 300;
 }
 
 .close:hover {
@@ -1540,17 +1565,20 @@ textarea.feedback__input {
   color: rgba(0, 0, 0, 0.20);
   position: absolute;
   top: calc(100% - 1px);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  right: 0;
+  left: 0px;
   width: 100px;
-  text-align: center;
 }
 
-.range__button--min .range__label{
-  left: 92%;
+.range__input {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  width: auto;
+  max-width: 80px;
 }
 
 .checkbox__input {
@@ -1810,11 +1838,13 @@ textarea.feedback__input {
 }
 
 .results__products-compare a:hover {
-  color: rgba(0, 0, 0, 1)
+  color: black;
+  opacity: 1;
 }
 
 .results__products-compare a:active {
-  color: rgba(0, 0, 0, 0.2)
+  color: rgba(0, 0, 0, 0.2);
+  opacity:1;
 }
 
 .results__products-label {
@@ -1861,10 +1891,14 @@ textarea.feedback__input {
 
 .pagination__btn:hover {
   background-color: rgba(0, 0, 0, 0.16);
+  color: black;
+  opacity: 1;
 }
 
 .pagination__btn:active {
   color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.16);
+  opacity: 1;
 }
 
 .pagination__page {
@@ -1881,17 +1915,21 @@ textarea.feedback__input {
 
 .pagination__page a:hover {
   color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .pagination__page a:active,
 .pagination__page.active a {
   color: rgba(0, 0, 0, 1);
+  opacity: 1;
 }
 
 .modal {
   width: 960px;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1907,13 +1945,20 @@ textarea.feedback__input {
 }
 
 .modal--map {
-  top: 1852px;
+  height: 559px;
+}
+
+.modal--map iframe {
+  position: relative;
+  z-index: 202;
 }
 
 .modal--map img {
   display: block;
-}
-
-.modal--feedback {
-  top: 1056px;
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  z-index: 201;
 }
