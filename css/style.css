@@ -150,6 +150,18 @@ a:active {
   padding-top: 9px;
 }
 
+.user-menu__logout a{
+  opacity: 0.3;
+}
+
+.user-menu__logout a:hover{
+  opacity: 0.6;
+}
+
+.user-menu__logout a:active{
+  opacity: 0.3;
+}
+
 .search__input {
   color: black;
   border: 0;
@@ -1087,6 +1099,7 @@ a:active {
   padding-left: 23px;
   margin-left: 42px;
   display: block;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer__navigation-item--logout a{
@@ -1408,7 +1421,7 @@ textarea.feedback__input {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 0;
-  width: 1200px;
+  width: 1160px;
 }
 
 .products:before {
@@ -1583,7 +1596,24 @@ textarea.feedback__input {
 
 .checkbox__input {
   z-index: 50;
-  display: none;
+}
+
+.checkbox:hover .checkbox__name:before, 
+.checkbox:hover .checkbox__name:after {
+  opacity: 0.6;
+}
+
+.checkbox:active .checkbox__name:before, 
+.checkbox:active .checkbox__name:after {
+  opacity: 1;
+}
+
+.checkbox__input:disabled~.checkbox__name {
+  opacity: 0.25;
+}
+
+.checkbox__input:focus~.checkbox__name {
+  opacity: 0.6;
 }
 
 .checkbox__name:before {
@@ -1616,7 +1646,24 @@ textarea.feedback__input {
 
 .radio__input {
   z-index: 50;
-  display: none;
+}
+
+.radio:hover .radio__name:before, 
+.radio:hover .radio__name:after {
+  opacity: 0.6;
+}
+
+.radio:active .radio__name:before, 
+.radio:active .radio__name:after {
+  opacity: 1;
+}
+
+.radio__input:disabled~.radio__name {
+  opacity: 0.25;
+}
+
+.radio__input:focus~.radio__name {
+  opacity: 0.6;
 }
 
 .radio__name:before {
@@ -1655,6 +1702,14 @@ textarea.feedback__input {
 
 .radio__input:checked~.radio__name:after {
   opacity: 1;
+}
+
+.radio:hover .radio__input:checked~.radio__name:after {
+  opacity: 0.6;
+}
+
+.radio:disabled .radio__input:checked~.radio__name:after {
+  opacity: 0.25;
 }
 
 .filters__button {
@@ -1935,8 +1990,7 @@ textarea.feedback__input {
   margin: 0 auto;
   z-index: 200;
   background-color: white;
-  -webkit-box-shadow: 0 0 20px 0 rgba(4, 6, 6, 0.2);
-          box-shadow: 0 0 20px 0 rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(4,6,6,0.20);
   display: none;
 }
 

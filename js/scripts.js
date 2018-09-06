@@ -6,13 +6,13 @@ function openPopup(openBtn, modal, className) {
   var popup = document.querySelector(modal)
   var closeBtn = document.querySelector(modal + ' .js-close')
 
-  btn.addEventListener('click',function(e){
+  btn.addEventListener('click', function(e){
     e.preventDefault()
     popup.classList.add(className)
     if (modal == '.js-feedback-container') insertFromLocalStorage()
   })
 
-  closeBtn.addEventListener('click',function(e){
+  closeBtn.addEventListener('click', function(e){
     e.preventDefault()
     popup.classList.remove(className)
     clearErrors('.js-feedback-form', 'error')
@@ -62,7 +62,6 @@ function validateForm() {
   }
 
   form.addEventListener('submit', function (e) {
-    console.log(name.value, email.value, text.value);
     if (!name.value || !email.value || !text.value) {
       e.preventDefault();
       form.classList.add('error');
