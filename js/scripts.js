@@ -51,6 +51,7 @@ function clearErrors(block, className) {
 
 function validateForm() {
   var form = document.querySelector('.js-feedback-form')
+  var inputs = document.querySelectorAll('.js-feedback-form input, .js-feedback-form textarea')
   var name = document.querySelector('.js-feedback-name')
   var email = document.querySelector('.js-feedback-email')
   var text = document.querySelector('.js-feedback-text')
@@ -72,5 +73,10 @@ function validateForm() {
       }
     }
   });
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('focus', function(){
+      form.classList.remove('error')
+    })
+  }
 }
 validateForm() 
