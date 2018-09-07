@@ -1916,7 +1916,7 @@ textarea.feedback__input {
   letter-spacing: 0.18px;
   display: inline-block;
   vertical-align: top;
-  padding-right: 28px;
+  width: 260px;
 }
 
 .results__products-price {
