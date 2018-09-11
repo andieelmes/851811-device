@@ -66,6 +66,9 @@ function validateForm() {
     if (!name.value || !email.value || !text.value) {
       e.preventDefault();
       form.classList.add('error');
+      setTimeout(() => {
+        form.classList.remove('error');
+      }, 1000);
     } else {
       if (isStorageSupport) {
         localStorage.setItem('name', name.value);

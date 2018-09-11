@@ -23,5 +23,5 @@ var storage='';var isStorageSupport=!0;function openPopup(openBtn,modal,classNam
   var email=document.querySelector('.js-feedback-email')
   var text=document.querySelector('.js-feedback-text')
   try{storage=localStorage.getItem('name')}catch(err){isStorageSupport=!1}
-  form.addEventListener('submit',function(e){if(!name.value||!email.value||!text.value){e.preventDefault();form.classList.add('error')}else{if(isStorageSupport){localStorage.setItem('name',name.value);localStorage.setItem('email',email.value)}}});for(var i=0;i<inputs.length;i++){inputs[i].addEventListener('focus',function(){form.classList.remove('error')})}}
+  form.addEventListener('submit',function(e){if(!name.value||!email.value||!text.value){e.preventDefault();form.classList.add('error');setTimeout(()=>{form.classList.remove('error')},1000)}else{if(isStorageSupport){localStorage.setItem('name',name.value);localStorage.setItem('email',email.value)}}});for(var i=0;i<inputs.length;i++){inputs[i].addEventListener('focus',function(){form.classList.remove('error')})}}
   validateForm()
