@@ -1546,7 +1546,7 @@ textarea.feedback__input {
 }
 
 .filters__title {
-  padding: 5px 60px 5px 60px;
+  padding: 23px 60px 23px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1808,10 +1808,7 @@ textarea.feedback__input {
 }
 
 .sorting {
-  padding: 5px 0 5px 73px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 23px 0 23px 73px;
   min-height: 70px;
   background-color: #EBEBEB;
 }
@@ -1831,6 +1828,11 @@ textarea.feedback__input {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  padding-top: 2px;
+}
+
+.sorting__direction {
+  padding-top: 7px;
 }
 
 .sorting__item {
