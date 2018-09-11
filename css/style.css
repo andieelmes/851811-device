@@ -1835,7 +1835,7 @@ textarea.feedback__input {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding-top: 2px;
-  max-width: 499px;
+  width: 499px;
 }
 
 .sorting__direction {
