@@ -582,25 +582,25 @@ a:active {
   opacity: 0;
 }
 
-#btn-1:checked~.slider__controls .slider__control[for="btn-1"]:before,
-#btn-2:checked~.slider__controls .slider__control[for="btn-2"]:before,
-#btn-3:checked~.slider__controls .slider__control[for="btn-3"]:before {
+.btn-1:checked~.slider__controls .slider__control[for="btn-1"]:before,
+.btn-2:checked~.slider__controls .slider__control[for="btn-2"]:before,
+.btn-3:checked~.slider__controls .slider__control[for="btn-3"]:before {
   opacity: 1;
 }
 
-#btn-1:checked~.slider__inner .slider__items {
+.btn-1:checked~.slider__inner .slider__items {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-#btn-2:checked~.slider__inner .slider__items {
+.btn-2:checked~.slider__inner .slider__items {
   -webkit-transform: translate(-1160px);
   -ms-transform: translate(-1160px);
   transform: translate(-1160px);
 }
 
-#btn-3:checked~.slider__inner .slider__items {
+.btn-3:checked~.slider__inner .slider__items {
   -webkit-transform: translate(-2320px);
   -ms-transform: translate(-2320px);
   transform: translate(-2320px);
@@ -905,31 +905,31 @@ a:active {
   opacity: 1;
 }
 
-#services-1:checked~.services__names .services__name[for="services-1"],
-#services-2:checked~.services__names .services__name[for="services-2"],
-#services-3:checked~.services__names .services__name[for="services-3"] {
+.services-1:checked~.services__names .services__name[for="services-1"],
+.services-2:checked~.services__names .services__name[for="services-2"],
+.services-3:checked~.services__names .services__name[for="services-3"] {
   color: #f7e184;
 }
 
-#services-1:checked~.services__names .services__name[for="services-1"]:after,
-#services-2:checked~.services__names .services__name[for="services-2"]:after,
-#services-3:checked~.services__names .services__name[for="services-3"]:after {
+.services-1:checked~.services__names .services__name[for="services-1"]:after,
+.services-2:checked~.services__names .services__name[for="services-2"]:after,
+.services-3:checked~.services__names .services__name[for="services-3"]:after {
   opacity: 1;
 }
 
-#services-1:checked~.services__inner .services__items {
+.services-1:checked~.services__inner .services__items {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-#services-2:checked~.services__inner .services__items {
+.services-2:checked~.services__inner .services__items {
   -webkit-transform: translate(-876px);
   -ms-transform: translate(-876px);
   transform: translate(-876px);
 }
 
-#services-3:checked~.services__inner .services__items {
+.services-3:checked~.services__inner .services__items {
   -webkit-transform: translate(-1752px);
   -ms-transform: translate(-1752px);
   transform: translate(-1752px);
